@@ -2,6 +2,7 @@ import React from 'react';
 import WeatherIcons from 'react-weathericons';
 import PropTypes from 'prop-types';
 
+
 const getWeatherIcon = (state) => {
     return (<WeatherIcons name={state} size="2x"/>);
 }

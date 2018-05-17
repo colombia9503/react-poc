@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import WeatherLocation from './components/WeatherLocation/index'
-import logo from './logo.svg';
+import LocationList from './components/WeatherLocation/LocationList'
 import './App.css';
 
+const cities = [{key:1, value:"Bogota,col"}, {key:2, value:"Buenos Aires,ar"}, {key:3, value:"Santiago,cl"}];
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <WeatherLocation></WeatherLocation>
+        <LocationList cities = {cities}></LocationList>
       </div>
     );
   }
